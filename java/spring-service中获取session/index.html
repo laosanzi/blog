@@ -2,13 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Categories</title>
+    <title>spring service中获取session</title>
   
-<<<<<<< HEAD
-    <meta name="author" content="Firstname Lastname">
-=======
     <meta name="author" content="Binge">
->>>>>>> 73884bcb2d6cd63e1eddf2e579e6dc3648dc8fdb
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
     <!--[if lt IE 9]>
@@ -19,11 +15,7 @@
     <link href="/assets/twitter/stylesheets/bootstrap.min.css" type="text/css" rel="stylesheet" media="all">
 <link href="/assets/twitter/stylesheets/style.css" type="text/css" rel="stylesheet" media="all">
 <link href="/assets/twitter/widgets/google_prettify/stylesheets/twitter-bootstrap.css" type="text/css" rel="stylesheet" media="all">
-<<<<<<< HEAD
- 
-=======
 
->>>>>>> 73884bcb2d6cd63e1eddf2e579e6dc3648dc8fdb
 
     <!-- Le fav and touch icons -->
   <!-- Update these with your own images
@@ -39,11 +31,7 @@
     <div class="navbar">
       <div class="navbar-inner">
         <div class="container">
-<<<<<<< HEAD
-          <a class="brand" href="/">Blog Title</a>
-=======
           <a class="brand" href="/">Binge</a>
->>>>>>> 73884bcb2d6cd63e1eddf2e579e6dc3648dc8fdb
           <ul class="nav">
             
               
@@ -61,9 +49,9 @@
 
             
               
-  <li class="active"><a href="/categories" class="active">Categories</a></li>
 
 
+  <li><a href="/categories">Categories</a></li>
 
 
             
@@ -89,76 +77,87 @@
     <div class="container">
 
       <div class="content">
-        
-<div class="page-header">
-  <h1>Categories </h1>
+        <div class="page-header">
+  <h1>spring service中获取session </h1>
 </div>
 
 <div class="row">
-  <div class="span12">
+  <div class="span8">
+    <h5>Spring 在service层中如何获取session？</h5>
+
+<pre><code class="language-java">ServletRequestAttributes sAtts = (ServletRequestAttributes)RequestContextHolder.currentRequestAttributes();
+HttpServletRequest req = sAtts.getRequest();
+HttpSession session = req.getSession();
+</code></pre>
+
+    <hr>
+    <div class="pagination">
+      <ul>
+        <ul>
+          
+            <li class="prev"><a href="/markdown/Markdown%E8%AF%AD%E6%B3%95/" title="Markdown语法">&larr; Previous</a></li>
+          
+          
+
+            <li><a href="/archive">Archive</a></li>
+
+          
+            <li class="next"><a href="/java/2016.8.7%E5%BC%80%E7%AF%87/" title="2016.8.7开篇">Next &rarr;</a></li>
+          
+          
+        </ul>
+      </ul>
+    </div>
+    <hr>
     
-<ul class="tag_box inline">
+<div id="disqus_thread"></div>
+<script>
+    var disqus_developer = 1;
+    var disqus_shortname = 'jekyllbootstrap'; // required: replace example with your forum shortname
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
 
-  <li>
-<<<<<<< HEAD
-  <a href="/categories/#Blog-ref">Blog <span>1</span></a>
-</li>
-
-  <li>
-  <a href="/categories/#Gor-ref">Gor <span>1</span></a>
-=======
+  </div>
+  
+  <div class="span4">
+    <h4>Published</h4>
+    <div class="date"><span>2016-08-10 00:18:24</span></div>
+    <br>
+    <h4>Categories</h4>
+    <ul class="tag_box">
+    
+      <li>
   <a href="/categories/#java-ref">java <span>2</span></a>
 </li>
-
-  <li>
-  <a href="/categories/#markdown-ref">markdown <span>1</span></a>
->>>>>>> 73884bcb2d6cd63e1eddf2e579e6dc3648dc8fdb
+    
+    </ul>
+    <br>
+    <h4>Tags</h4>
+    <ul class="tag_box">
+    
+      <li>
+  <a href="/tags/#spring-ref">spring <span>1</span></a>
 </li>
-
-</ul>
-
-
-<<<<<<< HEAD
-  <h2>Blog (1)</h2>
-  <ul>
     
-      <li><a href="/2013/new-born.html">你的第一篇博客</a></li>
+      <li>
+  <a href="/tags/#session-ref">session <span>1</span></a>
+</li>
     
-  </ul>
-
-  <h2>Gor (1)</h2>
-  <ul>
-    
-      <li><a href="/2013/new-born.html">你的第一篇博客</a></li>
-=======
-  <h2>java (2)</h2>
-  <ul>
-    
-      <li><a href="/java/spring-service%E4%B8%AD%E8%8E%B7%E5%8F%96session/">spring service中获取session</a></li>
-    
-      <li><a href="/java/2016.8.7%E5%BC%80%E7%AF%87/">2016.8.7开篇</a></li>
-    
-  </ul>
-
-  <h2>markdown (1)</h2>
-  <ul>
-    
-      <li><a href="/markdown/Markdown%E8%AF%AD%E6%B3%95/">Markdown语法</a></li>
->>>>>>> 73884bcb2d6cd63e1eddf2e579e6dc3648dc8fdb
-    
-  </ul>
-
+    </ul>
   </div>
 </div>
 
       </div>
 
       <footer>
-<<<<<<< HEAD
-        <p>&copy; Firstname Lastname 2013 
-=======
         <p>&copy; Binge 2016
->>>>>>> 73884bcb2d6cd63e1eddf2e579e6dc3648dc8fdb
           with help from <a href="http://github.com/wendal/gor" target="_blank" title="Gor -- Fast Blog">Gor</a>
           and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
 		  and Idea from <a href="http://ruhoh.com" target="_blank" title="The Definitive Technical Blogging Framework">ruhoh</a>
@@ -193,13 +192,10 @@
   })();
 
 </script>
-<<<<<<< HEAD
-=======
 
     <a href="https://github.com/laosanzi/">
       <img style="position: absolute; top: 0; right: 0; border: 0;"
         src="/assets/twitter/media/forkme_right_darkblue_121621.png" alt="Fork me on GitHub">
     </a>
->>>>>>> 73884bcb2d6cd63e1eddf2e579e6dc3648dc8fdb
   </body>
 </html>
