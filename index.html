@@ -94,26 +94,23 @@
 
   <p>直接上示例：</p>
 
-<p>```java
-public class Foo implements Serializable {
-    private static final long serialVersionUID = -3543769185722235969L;
-    private String name;
-    private int age;
-    private List<String> friends;</p>
+<p>```java</p>
 
-<pre><code>public String getName() {
-    return name;
-}
+<p>private String name;</p>
 
-public Foo setName(String name) {
+<p>private int age;</p>
+
+<p>private List<String> friends;</p>
+
+<p>public Foo setName(String name) {
     this.name = name;
     return this;
-}
+}</p>
 
-public int getAge() {
-    return age;
-}
-</code></pre>
+<p>public Foo setAge(int age) {
+    this.age = age;
+    return this;
+}</p>
 
 
   <div class="more">
