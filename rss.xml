@@ -2,7 +2,13 @@
 <rss version="2.0">  <channel>
     <title>Binge</title>
     <link>http://www.huangyunbing.com</link>
-    <pubDate>16 Aug 16 20:29 CST</pubDate>
+    <pubDate>17 Aug 16 20:52 CST</pubDate>
+    <item>
+      <title>java bean的set方法另一种方式</title>
+      <link>http://www.huangyunbing.com/java/java-bean%E7%9A%84set%E6%96%B9%E6%B3%95%E5%8F%A6%E4%B8%80%E7%A7%8D%E6%96%B9%E5%BC%8F/</link>
+      <pubDate>2016-08-17 12:00:00 +0800</pubDate>
+      <description>&lt;p&gt;直接上示例：&lt;/p&gt;&#xA;&#xA;&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;public class Foo implements Serializable {&#xA;    private static final long serialVersionUID = -3543769185722235969L;&#xA;    private String name;&#xA;    private int age;&#xA;    private List&amp;lt;String&amp;gt; friends;&#xA;&#xA;    public String getName() {&#xA;        return name;&#xA;    }&#xA;&#xA;    public Foo setName(String name) {&#xA;        this.name = name;&#xA;        return this;&#xA;    }&#xA;&#xA;    public int getAge() {&#xA;        return age;&#xA;    }&#xA;&#xA;    public Foo setAge(int age) {&#xA;        this.age = age;&#xA;        return this;&#xA;    }&#xA;&#xA;    public List&amp;lt;String&amp;gt; getFriends() {&#xA;        return friends;&#xA;    }&#xA;&#xA;    public Foo setFriends(List&amp;lt;String&amp;gt; friends) {&#xA;        this.friends = friends;&#xA;        return this;&#xA;    }&#xA;}&#xA;&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&#xA;&lt;p&gt;好处：&lt;/p&gt;&#xA;&#xA;&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;Foo foo = new Foo();&#xA;foo.setName(&amp;quot;Tom&amp;quot;)&#xA;   .setAge(25)&#xA;   .setFriends(Lists.newArrayList(&amp;quot;Jack&amp;quot;, &amp;quot;Lily&amp;quot;));&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;</description>
+    </item>
     <item>
       <title>Markdown语法</title>
       <link>http://www.huangyunbing.com/markdown/Markdown%E8%AF%AD%E6%B3%95/</link>

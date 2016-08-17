@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>首页</title>
+    <title>java bean的set方法另一种方式</title>
   
     <meta name="author" content="Binge">
 
@@ -77,128 +77,119 @@
     <div class="container">
 
       <div class="content">
-        
-<div class="page-header">
-  <h1>首页 </h1>
+        <div class="page-header">
+  <h1>java bean的set方法另一种方式 </h1>
 </div>
 
 <div class="row">
-  <div class="span12">
-    
+  <div class="span8">
+    <p>直接上示例：</p>
 
-<h2>最近更新</h2>
-
-
-<div class="post">
-  <h3 class="title"><a href="/java/java-bean%E7%9A%84set%E6%96%B9%E6%B3%95%E5%8F%A6%E4%B8%80%E7%A7%8D%E6%96%B9%E5%BC%8F/">java bean的set方法另一种方式</a> <span class="date">2016-08-17</span></h3>
-
-  <p>直接上示例：</p>
-
-<p>```java
-public class Foo implements Serializable {
+<pre><code class="language-java">public class Foo implements Serializable {
     private static final long serialVersionUID = -3543769185722235969L;
     private String name;
     private int age;
-    private List<String> friends;</p>
+    private List&lt;String&gt; friends;
 
-<pre><code>public String getName() {
-    return name;
+    public String getName() {
+        return name;
+    }
+
+    public Foo setName(String name) {
+        this.name = name;
+        return this;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public Foo setAge(int age) {
+        this.age = age;
+        return this;
+    }
+
+    public List&lt;String&gt; getFriends() {
+        return friends;
+    }
+
+    public Foo setFriends(List&lt;String&gt; friends) {
+        this.friends = friends;
+        return this;
+    }
 }
 
-public Foo setName(String name) {
-    this.name = name;
-    return this;
-}
-
-public int getAge() {
-    return age;
-}
 </code></pre>
 
+<p>好处：</p>
 
-  <div class="more">
-    <a href="/java/java-bean%E7%9A%84set%E6%96%B9%E6%B3%95%E5%8F%A6%E4%B8%80%E7%A7%8D%E6%96%B9%E5%BC%8F/" class="btn">read more..</a>
-  </div>
-</div>
-
-<div class="post">
-  <h3 class="title"><a href="/markdown/Markdown%E8%AF%AD%E6%B3%95/">Markdown语法</a> <span class="date">2016-08-15 20:39:36</span></h3>
-
-  <h2>1. 标题</h2>
-
-<pre><code class="language-markdown"># 一级标题
-## 二级标题
-### 三级标题
-#### 四级标题
-##### 五级标题
-###### 六级标题
+<pre><code class="language-java">Foo foo = new Foo();
+foo.setName(&quot;Tom&quot;)
+   .setAge(25)
+   .setFriends(Lists.newArrayList(&quot;Jack&quot;, &quot;Lily&quot;));
 </code></pre>
 
-<h1>一级标题</h1>
+    <hr>
+    <div class="pagination">
+      <ul>
+        <ul>
+          
+          
+            <li class="prev disabled"><a>&larr; Previous</a></li>
+          
 
-<h2>二级标题</h2>
+            <li><a href="/archive">Archive</a></li>
 
-<h3>三级标题</h3>
+          
+            <li class="next"><a href="/markdown/Markdown%E8%AF%AD%E6%B3%95/" title="Markdown语法">Next &rarr;</a></li>
+          
+          
+        </ul>
+      </ul>
+    </div>
+    <hr>
+    
+<div id="disqus_thread"></div>
+<script>
+    var disqus_developer = 1;
+    var disqus_shortname = 'jekyllbootstrap'; // required: replace example with your forum shortname
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
 
-<h4>四级标题</h4>
-
-<h5>五级标题</h5>
-
-<h6>六级标题</h6>
-
-<hr />
-
-<h2>2. 块引用</h2>
-
-<pre><code class="language-markdown">&gt; xxx
-&gt; &gt; xxx
-&gt; xxx
-</code></pre>
-
-
-  <div class="more">
-    <a href="/markdown/Markdown%E8%AF%AD%E6%B3%95/" class="btn">read more..</a>
   </div>
-</div>
-
-<div class="post">
-  <h3 class="title"><a href="/java/spring-service%E4%B8%AD%E8%8E%B7%E5%8F%96session/">spring service中获取session</a> <span class="date">2016-08-10 00:18:24</span></h3>
-
-  <h5>Spring 在service层中如何获取session？</h5>
-
-<pre><code class="language-java">ServletRequestAttributes sAtts = (ServletRequestAttributes)RequestContextHolder.currentRequestAttributes();
-HttpServletRequest req = sAtts.getRequest();
-HttpSession session = req.getSession();
-</code></pre>
-
-
-  <div class="more">
-    <a href="/java/spring-service%E4%B8%AD%E8%8E%B7%E5%8F%96session/" class="btn">read more..</a>
-  </div>
-</div>
-
-<div class="post">
-  <h3 class="title"><a href="/java/2016.8.7%E5%BC%80%E7%AF%87/">2016.8.7开篇</a> <span class="date">2016-08-07</span></h3>
-
-  <p>最近接触的项目：</p>
-
-<ul>
-<li><p>分布式相关：<a href="https://zookeeper.apache.org/">zookeeper</a>、<a href="http://dubbo.io/">dubbo</a>、<a href="http://projects.spring.io/spring-cloud/">spring cloud</a></p></li>
-
-<li><p>spring的项目快速构建工具：<a href="http://projects.spring.io/spring-boot">spring boot</a></p></li>
-
-<li><p>模板技术：<a href="http://freemarker.org/">freemarker</a>、<a href="http://www.thymeleaf.org/">thymeleaf</a>、<a href="http://ibeetl.com/community/">beetl</a></p></li>
-
-<li><p>Mvc框架相关：<a href="http://www.jfinal.com/">jdinal</a>、<a href="http://www.tinygroup.org/">tiny framework</a>、<a href="http://www.nutzam.com/">nutz</a></p></li>
-</ul>
-
-
-  <div class="more">
-    <a href="/java/2016.8.7%E5%BC%80%E7%AF%87/" class="btn">read more..</a>
-  </div>
-</div>
-
-
+  
+  <div class="span4">
+    <h4>Published</h4>
+    <div class="date"><span>2016-08-17</span></div>
+    <br>
+    <h4>Categories</h4>
+    <ul class="tag_box">
+    
+      <li>
+  <a href="/categories/#java-ref">java <span>3</span></a>
+</li>
+    
+    </ul>
+    <br>
+    <h4>Tags</h4>
+    <ul class="tag_box">
+    
+      <li>
+  <a href="/tags/#bean-ref">bean <span>1</span></a>
+</li>
+    
+      <li>
+  <a href="/tags/#set%E6%96%B9%E6%B3%95-ref">set方法 <span>1</span></a>
+</li>
+    
+    </ul>
   </div>
 </div>
 
