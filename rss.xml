@@ -2,12 +2,12 @@
 <rss version="2.0">  <channel>
     <title>Binge</title>
     <link>http://www.huangyunbing.com</link>
-    <pubDate>19 Aug 16 00:05 CST</pubDate>
+    <pubDate>19 Aug 16 00:10 CST</pubDate>
     <item>
       <title>收藏一个静态博客生成网址</title>
       <link>http://www.huangyunbing.com/收藏/%E6%94%B6%E8%97%8F%E4%B8%80%E4%B8%AA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E7%94%9F%E6%88%90%E7%BD%91%E5%9D%80/</link>
       <pubDate>2016-08-18 12:00:00 +0800</pubDate>
-      <description>&lt;p&gt;&lt;a href=&#34;http://www.staticgen.com/&#34;&gt;静态博客生成器（各种语言）&lt;/a&gt;&lt;/p&gt;&#xA;</description>
+      <description>&lt;p&gt;主要有：&lt;/p&gt;&#xA;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Jekyll(ruby)&lt;/li&gt;&#xA;&lt;li&gt;GitBook(Js)&lt;/li&gt;&#xA;&lt;li&gt;Hexo(Js)&lt;/li&gt;&#xA;&lt;li&gt;Hugo(Go)&#xA;&amp;hellip;&lt;/li&gt;&#xA;&lt;li&gt;Gor(Go, 本博客所用)&lt;/li&gt;&#xA;&lt;li&gt;Jbase(Java)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&#xA;&lt;p&gt;详见： &lt;a href=&#34;http://www.staticgen.com/&#34;&gt;静态博客生成器（各种语言）&lt;/a&gt;&lt;/p&gt;&#xA;</description>
     </item>
     <item>
       <title>java bean的set方法另一种方式</title>
