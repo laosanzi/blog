@@ -2,7 +2,7 @@
 <rss version="2.0">  <channel>
     <title>Binge</title>
     <link>http://www.huangyunbing.com</link>
-    <pubDate>18 Aug 16 23:57 CST</pubDate>
+    <pubDate>19 Aug 16 00:05 CST</pubDate>
     <item>
       <title>收藏一个静态博客生成网址</title>
       <link>http://www.huangyunbing.com/收藏/%E6%94%B6%E8%97%8F%E4%B8%80%E4%B8%AA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E7%94%9F%E6%88%90%E7%BD%91%E5%9D%80/</link>
@@ -13,7 +13,7 @@
       <title>java bean的set方法另一种方式</title>
       <link>http://www.huangyunbing.com/java/java-bean%E7%9A%84set%E6%96%B9%E6%B3%95%E5%8F%A6%E4%B8%80%E7%A7%8D%E6%96%B9%E5%BC%8F/</link>
       <pubDate>2016-08-17 12:00:00 +0800</pubDate>
-      <description>&lt;p&gt;直接上示例：&lt;/p&gt;&#xA;&#xA;&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;&#xA;private String name;&#xA;&#xA;private int age;&#xA;&#xA;private List&amp;lt;String&amp;gt; friends;&#xA;&#xA;public Foo setName(String name) {&#xA;    this.name = name;&#xA;    return this;&#xA;}&#xA;&#xA;public Foo setAge(int age) {&#xA;    this.age = age;&#xA;    return this;&#xA;}&#xA;&#xA;public Foo setFriends(List&amp;lt;String&amp;gt; friends) {&#xA;    this.friends = friends;&#xA;    return this;&#xA;}&#xA;&#xA;...get方法...&#xA;&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&#xA;&lt;p&gt;好处：&lt;/p&gt;&#xA;&#xA;&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;Foo foo = new Foo();&#xA;foo.setName(&amp;quot;Tom&amp;quot;)&#xA;   .setAge(25)&#xA;   .setFriends(Lists.newArrayList(&amp;quot;Jack&amp;quot;, &amp;quot;Lily&amp;quot;));&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;</description>
+      <description>&lt;p&gt;直接上示例：&lt;/p&gt;&#xA;&#xA;&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;private String name;&#xA;private int age;&#xA;private List&amp;lt;String&amp;gt; friends;&#xA;public Foo setName(String name) {&#xA;    this.name = name;&#xA;    return this;&#xA;}&#xA;public Foo setAge(int age) {&#xA;    this.age = age;&#xA;    return this;&#xA;}&#xA;public Foo setFriends(List&amp;lt;String&amp;gt; friends) {&#xA;    this.friends = friends;&#xA;    return this;&#xA;}&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&#xA;&lt;p&gt;好处：&lt;/p&gt;&#xA;&#xA;&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;Foo foo = new Foo();&#xA;foo.setName(&amp;quot;Tom&amp;quot;)&#xA;   .setAge(25)&#xA;   .setFriends(Lists.newArrayList(&amp;quot;Jack&amp;quot;, &amp;quot;Lily&amp;quot;));&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;</description>
     </item>
     <item>
       <title>Markdown语法</title>

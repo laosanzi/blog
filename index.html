@@ -105,23 +105,22 @@
 
   <p>直接上示例：</p>
 
-<p>``` java</p>
-
-<p>private String name;</p>
-
-<p>private int age;</p>
-
-<p>private List<String> friends;</p>
-
-<p>public Foo setName(String name) {
+<pre><code class="language-java">private String name;
+private int age;
+private List&lt;String&gt; friends;
+public Foo setName(String name) {
     this.name = name;
     return this;
-}</p>
-
-<p>public Foo setAge(int age) {
+}
+public Foo setAge(int age) {
     this.age = age;
     return this;
-}</p>
+}
+public Foo setFriends(List&lt;String&gt; friends) {
+    this.friends = friends;
+    return this;
+}
+</code></pre>
 
 
   <div class="more">
