@@ -2,7 +2,13 @@
 <rss version="2.0">  <channel>
     <title>Binge</title>
     <link>http://www.huangyunbing.com</link>
-    <pubDate>17 Aug 16 20:59 CST</pubDate>
+    <pubDate>18 Aug 16 23:57 CST</pubDate>
+    <item>
+      <title>收藏一个静态博客生成网址</title>
+      <link>http://www.huangyunbing.com/收藏/%E6%94%B6%E8%97%8F%E4%B8%80%E4%B8%AA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E7%94%9F%E6%88%90%E7%BD%91%E5%9D%80/</link>
+      <pubDate>2016-08-18 12:00:00 +0800</pubDate>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.staticgen.com/&#34;&gt;静态博客生成器（各种语言）&lt;/a&gt;&lt;/p&gt;&#xA;</description>
+    </item>
     <item>
       <title>java bean的set方法另一种方式</title>
       <link>http://www.huangyunbing.com/java/java-bean%E7%9A%84set%E6%96%B9%E6%B3%95%E5%8F%A6%E4%B8%80%E7%A7%8D%E6%96%B9%E5%BC%8F/</link>
