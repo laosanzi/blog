@@ -90,6 +90,41 @@
 
 
 <div class="post">
+  <h3 class="title"><a href="/java/pdf%E8%BD%AC%E5%9B%BE%E7%89%87/">pdf转图片</a> <span class="date">2016-08-24</span></h3>
+
+  <p>pdf转图片主要有以下几种方式：</p>
+
+<ul>
+<li>pdfbox</li>
+<li>icepdf</li>
+<li>jpedal</li>
+<li>ghost4j</li>
+</ul>
+
+<p>其中，ghost4j转换如下：
+```java
+/**
+ * Converts PDF to PNG format.
+ *
+ * @param inputPdfFile input file
+ * @return an array of PNG images
+ */
+public static File[] convertPdf2Png(File inputPdfFile) {
+    File imageDir = inputPdfFile.getParentFile();</p>
+
+<pre><code>if (imageDir == null) {
+    String userDir = System.getProperty(&quot;user.dir&quot;);
+    imageDir = new File(userDir);
+}
+</code></pre>
+
+
+  <div class="more">
+    <a href="/java/pdf%E8%BD%AC%E5%9B%BE%E7%89%87/" class="btn">read more..</a>
+  </div>
+</div>
+
+<div class="post">
   <h3 class="title"><a href="/java/tess4j%E6%8A%93%E5%8F%96%E5%9B%BE%E7%89%87%E6%96%87%E5%AD%97%E5%86%85%E5%AE%B9/">tess4j抓取图片文字内容</a> <span class="date">2016-08-24</span></h3>
 
   <h2>1.pom.xml中配置依赖jar包</h2>
