@@ -101,21 +101,18 @@
 <li>ghost4j</li>
 </ul>
 
-<p>其中，ghost4j转换如下：
-```java
-/**
+<hr />
+
+<h3>其中，ghost4j转换如下</h3>
+
+<pre><code>/**
  * Converts PDF to PNG format.
  *
  * @param inputPdfFile input file
  * @return an array of PNG images
  */
 public static File[] convertPdf2Png(File inputPdfFile) {
-    File imageDir = inputPdfFile.getParentFile();</p>
-
-<pre><code>if (imageDir == null) {
-    String userDir = System.getProperty(&quot;user.dir&quot;);
-    imageDir = new File(userDir);
-}
+    File imageDir = inputPdfFile.getParentFile();
 </code></pre>
 
 
