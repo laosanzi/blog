@@ -90,6 +90,72 @@
 
 
 <div class="post">
+  <h3 class="title"><a href="/java/tess4j%E6%8A%93%E5%8F%96%E5%9B%BE%E7%89%87%E6%96%87%E5%AD%97%E5%86%85%E5%AE%B9/">tess4j抓取图片文字内容</a> <span class="date">2016-08-24</span></h3>
+
+  <h2>1.pom.xml中配置依赖jar包</h2>
+
+<pre><code class="language-xml">&lt;dependencies&gt;
+    &lt;dependency&gt;
+        &lt;groupId&gt;net.sourceforge.tess4j&lt;/groupId&gt;
+        &lt;artifactId&gt;tess4j&lt;/artifactId&gt;
+        &lt;version&gt;3.2.1&lt;/version&gt;
+    &lt;/dependency&gt;
+    &lt;dependency&gt;
+        &lt;groupId&gt;com.sun.media.imageio&lt;/groupId&gt;
+        &lt;artifactId&gt;jai_imageio&lt;/artifactId&gt;
+        &lt;version&gt;1.0_01&lt;/version&gt;
+        &lt;scope&gt;system&lt;/scope&gt;
+        &lt;systemPath&gt;${project.basedir}/lib/jai_imageio.jar&lt;/systemPath&gt;
+    &lt;/dependency&gt;
+&lt;/dependencies&gt;
+</code></pre>
+
+<h2>2. 解压下载到.m2中的<code>tess4j-3.2.1.jar</code>包，找到tessdata文件夹：</h2>
+
+<p><img src="/assets/media/2016-08-24-2016-08-24-tess4j抓取图片文字内容/tessdata文件夹.png" alt="" width="600"></p>
+
+<h2>3. 在github上下载中文训练包chi_sim.traineddata：</h2>
+
+<p><img src="/assets/media/2016-08-24-2016-08-24-tess4j抓取图片文字内容/中文训练包.png" alt="" width="600"></p>
+
+<h2>4. 相关文件拷贝到resources目录下：</h2>
+
+<p><img src="/assets/media/2016-08-24-2016-08-24-tess4j抓取图片文字内容/拷贝相关文件.png" alt="" width="600"></p>
+
+<h2>5. 待抓取的tif图片，执行抓取：</h2>
+
+<pre><code class="language-java">package com.binge;
+
+import net.sourceforge.tess4j.ITesseract;
+import net.sourceforge.tess4j.Tesseract;
+import net.sourceforge.tess4j.util.LoadLibs;
+
+import java.io.File;
+
+public class App {
+    public static void main(String[] args) throws Exception {
+//        String fileName = &quot;abc.tif&quot;;
+//        String fileName = &quot;eurotext.tif&quot;;
+//        String fileName = &quot;phototest.tif&quot;;
+        String fileName = &quot;chi.tif&quot;;
+        File img = new File(App.class.getClassLoader().getResource(fileName).getPath());
+
+        ITesseract iTesseract = new Tesseract();
+//        iTesseract.setLanguage(&quot;eng&quot;);
+        iTesseract.setLanguage(&quot;chi_sim&quot;);
+        iTesseract.setDatapath(LoadLibs.extractTessResources(&quot;tessdata&quot;).getAbsolutePath());
+        System.out.println(iTesseract.doOCR(img));
+    }
+}
+</code></pre>
+
+
+  <div class="more">
+    <a href="/java/tess4j%E6%8A%93%E5%8F%96%E5%9B%BE%E7%89%87%E6%96%87%E5%AD%97%E5%86%85%E5%AE%B9/" class="btn">read more..</a>
+  </div>
+</div>
+
+<div class="post">
   <h3 class="title"><a href="/收藏/%E6%94%B6%E8%97%8F%E4%B8%80%E4%B8%AA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E7%94%9F%E6%88%90%E7%9A%84%E6%8E%92%E5%90%8D%E7%BD%91%E5%9D%80/">收藏一个静态博客生成的排名网址</a> <span class="date">2016-08-18</span></h3>
 
   <p>主要有：</p>
