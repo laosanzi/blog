@@ -144,13 +144,13 @@ public class User implements Serializable{
 <li>jar包依赖</li>
 </ul>
 
-<pre><code class="language-xml">    &lt;!-- https://mvnrepository.com/artifact/org.projectlombok/lombok --&gt;
-    &lt;dependency&gt;
-        &lt;groupId&gt;org.projectlombok&lt;/groupId&gt;
-        &lt;artifactId&gt;lombok&lt;/artifactId&gt;
-        &lt;version&gt;1.16.10&lt;/version&gt;
-        &lt;scope&gt;provided&lt;/scope&gt; &lt;!--声明周期为编译，打包的时候jar包不会打入目标包中--&gt;
-    &lt;/dependency&gt;
+<pre><code class="language-xml">&lt;!-- https://mvnrepository.com/artifact/org.projectlombok/lombok --&gt;
+&lt;dependency&gt;
+    &lt;groupId&gt;org.projectlombok&lt;/groupId&gt;
+    &lt;artifactId&gt;lombok&lt;/artifactId&gt;
+    &lt;version&gt;1.16.10&lt;/version&gt;
+    &lt;scope&gt;provided&lt;/scope&gt; &lt;!--声明周期为编译，打包的时候jar包不会打入目标包中--&gt;
+&lt;/dependency&gt;
 </code></pre>
 
 <ul>
@@ -158,24 +158,21 @@ public class User implements Serializable{
 <br /></li>
 </ul>
 
-<pre><code class="language-java">    package com.binge.entity;
-
-    import lombok.AllArgsConstructor;
-    import lombok.Data;
-    import lombok.NoArgsConstructor;
-
-    import java.io.Serializable;
-    import java.util.List;
-
-    @Data
-    @NoArgsConstructor
-    @AllArgsConstructor
-    public class User implements Serializable {
-        private static final long serialVersionUID = 707985171749658644L;
-        private Long id;
-        private String name;
-        private List&lt;String&gt; friends;
-    }
+<pre><code class="language-java">package com.binge.entity;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import java.io.Serializable;
+import java.util.List;
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class User implements Serializable {
+    private static final long serialVersionUID = 707985171749658644L;
+    private Long id;
+    private String name;
+    private List&lt;String&gt; friends;
+}
 </code></pre>
 
 <h4>常见标签</h4>
