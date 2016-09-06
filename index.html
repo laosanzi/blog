@@ -90,6 +90,38 @@
 
 
 <div class="post">
+  <h3 class="title"><a href="/java/lombok/">lombok</a> <span class="date">2016-09-06</span></h3>
+
+  <ul>
+<li>好处：有了lombok，就免去了实体类写get/set等通用方法的麻烦</li>
+<li>主页：<a href="https://projectlombok.org/">lombok主页</a></li>
+<li>示例：</li>
+</ul>
+
+<h4>之前：</h4>
+
+<pre><code>package com.binge.entity;
+
+import java.io.Serializable;
+import java.util.List;
+
+public class User implements Serializable{
+    private static final long serialVersionUID = 707985171749658644L;
+    private Long id;
+    private String name;
+    private List&lt;String&gt; friends;
+
+    public User() {
+    }
+</code></pre>
+
+
+  <div class="more">
+    <a href="/java/lombok/" class="btn">read more..</a>
+  </div>
+</div>
+
+<div class="post">
   <h3 class="title"><a href="/editor/vscode/">vscode</a> <span class="date">2016-09-03</span></h3>
 
   <h3>下午一直在倒腾VSCode，感觉很不错啊。</h3>

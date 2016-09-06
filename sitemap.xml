@@ -4,6 +4,11 @@
 		<loc>http://www.huangyunbing.com/</loc>
 	</url>
 	<url>
+		<loc>http://www.huangyunbing.com/java/lombok/</loc>
+		<lastmod>2016-09-06</lastmod>
+		<changefreq>weekly</changefreq>
+	</url>
+	<url>
 		<loc>http://www.huangyunbing.com/editor/vscode/</loc>
 		<lastmod>2016-09-03</lastmod>
 		<changefreq>weekly</changefreq>
