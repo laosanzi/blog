@@ -85,6 +85,7 @@
   <div class="span8">
     <ul>
 <li>好处：有了lombok，就免去了实体类写get/set等通用方法的麻烦</li>
+<li>缺点：降低了代码的可读性</li>
 <li>主页：<a href="https://projectlombok.org/">lombok主页</a></li>
 <li>示例：</li>
 </ul>
@@ -143,11 +144,12 @@ public class User implements Serializable{
 <li>jar包依赖</li>
 </ul>
 
-<pre><code class="language-xml">    &lt;dependency&gt;
+<pre><code class="language-xml">    &lt;!-- https://mvnrepository.com/artifact/org.projectlombok/lombok --&gt;
+    &lt;dependency&gt;
         &lt;groupId&gt;org.projectlombok&lt;/groupId&gt;
         &lt;artifactId&gt;lombok&lt;/artifactId&gt;
         &lt;version&gt;1.16.10&lt;/version&gt;
-        &lt;scope&gt;provided&lt;/scope&gt;
+        &lt;scope&gt;provided&lt;/scope&gt; &lt;!--声明周期为编译，打包的时候jar包不会打入目标包中--&gt;
     &lt;/dependency&gt;
 </code></pre>
 
